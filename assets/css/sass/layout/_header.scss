@@ -12,16 +12,19 @@ header {
         padding: 14px 89px 13px 89px;
         flex-shrink: 0;
         /* Shadow/Badge */
-        box-shadow: 0px 12px 4px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
     .header__location {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         height: 3.125rem; /* 50px */
         width: 100%;
         gap: 1.063rem; /* 17px */
         background: $light-grey;
+        z-index: -1;
+        // margin-top: 63px;
     }
 }

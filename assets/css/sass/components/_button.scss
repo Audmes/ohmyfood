@@ -21,10 +21,17 @@
     color: $btn-text-color-1;
     flex-shrink: 0;
     border-radius: 25px;
-    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-
+    background: $button-gradient;
+    // background: var(--button-gradient, );
+    transition: all 450ms ease;
     /* Shadow/Button */
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+        // transform: scale(1.02);
+        opacity: 0.8;
+        box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+    }
 }
 
 // Preparation btn
@@ -84,19 +91,20 @@
 
 // Favorite heart btn
 .btn__favorite {
-    position: absolute;
+    // position: absolute;
     background: transparent;
-    height: 20px;
-    width: 20px;
-    right: 25px;
-    bottom: 33px;
+    height: 100%;
+    width: 22px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0;
     z-index: 1;
 
     & i {
         position: absolute;
-        top: 0;
-        left: 0;
+        font-size: 22px;
         transition: all 450ms ease;
         cursor: pointer;
 

@@ -6,6 +6,98 @@ body {
   font: normal 125% / 1.4 $text-font-stack;
 }
 
+h1 {
+  color: $h1--color;
+  text-align: center;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+header {
+  color: var(--Grey, #353535);
+  /* Button */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.section__title {
+  color: $section__title--color;
+  margin-bottom: 25px;
+  
+  /* Section Title */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section__reserve {
+  h1, p {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+  }
+  h1 {
+    /* Section Title */
+    font-size: 28px;
+    font-weight: 700;
+    
+  }
+  p {
+    /* Paragraph */
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey, #353535);
+  }
+}
+
+.card {
+    &__title {
+      color: #000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__subtitle {
+      color: #000;
+      font-family: Roboto;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+}
+
 .footer__title h2 {
   color: $footer-title-color;
   font-family: Shrikhand;
