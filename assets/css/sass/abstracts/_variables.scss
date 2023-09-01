@@ -8,15 +8,31 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Roboto', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$code-font-stack: 'Courier New', monospace !default;
 
 
 
 
+/// Primary color
+/// @type Color
+$primary-color: rgb(147, 86, 220) !default;
+
+/// Secondary color
+/// @type Color
+$secondary-color: rgb(255, 121, 218) !default;
+
+/// Tertiary color
+/// @type Color
+$tertiary-color: rgb(153, 226, 208) !default;
+
+
+/// Gradient linear
+/// @type Color
+$gradient-color: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%) !default;
 
 /// Copy text color
 /// @type Color
@@ -41,6 +57,14 @@ $btn-text-color-1: rgb(255, 255, 255) !default;
 /// Button 2 txt color
 /// @type Color
 $btn-text-color-2: rgb(0, 0, 0) !default;
+
+/// Footer title color
+/// @type Color
+$footer-title-color:rgb(255, 255, 255) !default;
+
+/// Footer link color
+/// @type Color
+$footer-link-color:rgb(255, 255, 255) !default;
 
 /// Light grey
 /// @type Color

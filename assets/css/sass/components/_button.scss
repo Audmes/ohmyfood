@@ -14,6 +14,7 @@
     border: 0;
 }
 
+// Reserve btn
 .reserve__btn {
     width: 218px;
     height: 50px;
@@ -26,6 +27,7 @@
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+// Preparation btn
 .preparation__wrapper__btn {
     display: flex;
     flex-direction: column;
@@ -76,6 +78,39 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+        }
+    }
+}
+
+// Favorite heart btn
+.btn__favorite {
+    position: absolute;
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    right: 25px;
+    bottom: 33px;
+    border: 0;
+    z-index: 1;
+
+    & i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 450ms ease;
+        cursor: pointer;
+
+        &.full__heart {
+            opacity: 0;
+            transition: all 1s ease;
+            &:hover {
+                transform: scale(1.2);
+                color: transparent;
+                background-image: $gradient-color;
+                -webkit-background-clip: text;
+                background-clip: text;
+                opacity: 1;
+            }
         }
     }
 }

@@ -4,6 +4,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -371,7 +373,26 @@ section .section__title {
  */
 body {
   color: rgb(0, 0, 0);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: normal 125%/1.4 "Roboto", "Arial", sans-serif;
+}
+
+.footer__title h2 {
+  color: rgb(255, 255, 255);
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__link a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /**
@@ -457,6 +478,15 @@ header .header__location {
 
 footer {
   background: rgb(53, 53, 53);
+  padding: 22px 0;
+}
+footer .footer__wrapper {
+  display: grid;
+}
+footer .footer__link {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .btn {
@@ -529,6 +559,36 @@ footer {
   line-height: normal;
 }
 
+.btn__favorite {
+  position: absolute;
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  right: 25px;
+  bottom: 33px;
+  border: 0;
+  z-index: 1;
+}
+.btn__favorite i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 450ms ease;
+  cursor: pointer;
+}
+.btn__favorite i.full__heart {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.btn__favorite i.full__heart:hover {
+  transform: scale(1.2);
+  color: transparent;
+  background-image: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 1;
+}
+
 .section__reserve {
   align-items: center;
   gap: 25px;
@@ -548,20 +608,47 @@ footer {
 
 .section__restaurants .restaurants__cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 25px;
 }
 .section__restaurants .restaurants__cards .card {
   width: 100%;
+  max-width: 425px;
   border-radius: 1.25rem; /* 20px */
   background-color: white;
   border-radius: 1.25rem; /* 20px */
-  padding: 0.31rem; /* 5px */
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .section__restaurants .restaurants__cards .card img {
   width: 100%;
+  height: 231px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50% cover no-repeat;
   border-radius: 1.25rem 1.25rem 0 0;
+}
+.section__restaurants .restaurants__cards .card a {
+  text-decoration: none;
+}
+.section__restaurants .restaurants__cards .card__txt {
+  padding: 0 15px;
+  position: relative;
+}
+.section__restaurants .restaurants__cards .card__title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.section__restaurants .restaurants__cards .card__subtitle {
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=main.css.map */
