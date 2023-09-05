@@ -9,8 +9,6 @@
     font-weight: 500;
     line-height: normal;
     text-align: center;
-
-    cursor: pointer;
     border: 0;
 }
 
@@ -19,9 +17,9 @@
     width: 218px;
     height: 50px;
     color: $btn-text-color-1;
-    flex-shrink: 0;
     border-radius: 25px;
     background: $button-gradient;
+    cursor: pointer;
     // background: var(--button-gradient, );
     transition: all 450ms ease;
     /* Shadow/Button */
@@ -40,25 +38,56 @@
     flex-direction: column;
     gap: 25px;
     align-items: center;
+    width: 100%;
+    counter-reset: index;
 
     .preparation__btn {
         position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
         width: 322.486px;
         height: 72.379px;
-        flex-shrink: 0;
         border-radius: 20px;
         background: $light-grey-2;
-    
+        padding: 0;
+        margin-left: 12px;
+
         /* Shadow/Instructions */
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
-        a {
+        &::before {   
+            counter-increment: index;
+            content: counter(index);  
+            // content: '';       
+            position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
-            color: $btn-text-color-2;
-            text-decoration: none;
+            left: -12px;
+            height: 24px;
+            width: 24px;
+            background-color: #9356DC;
+            border-radius: 50%;
+            
+            color: var(--background, #F6F6F6);
+            font-family: Roboto;
+            font-size: 14.182px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        i {
+            &.color1 {
+                color: $btn-ico-color-1;
+            }
+
+            &.color2 {
+                color: $btn-ico-color-2;
+            }
         }
 
         .btn__txt {
@@ -67,12 +96,10 @@
         }
 
         .btn__dot {
-            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            left: -12px;
+            margin-left: -12px;
             height: 24px;
             width: 24px;
             flex-shrink: 0;

@@ -54,9 +54,13 @@ $section__title--color: rgb(0, 0, 0) !default;
 /// @type Color
 $btn-text-color-1: rgb(255, 255, 255) !default;
 
-/// Button 2 txt color
+/// Button preparation ico color
 /// @type Color
-$btn-text-color-2: rgb(0, 0, 0) !default;
+$btn-ico-color-1: rgb(126, 126, 126) !default;
+
+/// Button preparation ico color 2
+/// @type Color
+$btn-ico-color-2: rgb(147, 86, 220) !default;
 
 /// Button Gradient color
 $button-gradient: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%) !default;
