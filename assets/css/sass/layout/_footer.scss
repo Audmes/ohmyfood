@@ -4,6 +4,7 @@
 footer {
     background: $dark-grey;
     padding: 22px 0;
+    min-width: 320px;
 
     .footer__wrapper {
         display: grid;

@@ -13,8 +13,22 @@
 
 .section__menu {
     position: relative;
-    margin-top: -55px;
-    background-color: aqua;
+    margin-top: -80px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    background-color: $section__bg--color;
     border-radius: 2rem 2rem 0 0; /* 20px */;
     z-index: 1;
+
+    .menu__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 27px;
+    }
+}
+
+.section__commande {
+    background-color: $section__bg--color;
 }

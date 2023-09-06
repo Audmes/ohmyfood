@@ -98,6 +98,76 @@ header {
     }
 }
 
+.section__menu {
+  h1 {
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-align: left;
+  }
+}
+
+
+/// Menu restaurants
+
+.section__commande {
+  form {
+    legend {
+      color: #000;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .commande__form-group {
+    .commande__form-title {
+      h2, p {
+        text-align: left;
+  
+        overflow: hidden;
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Roboto;
+        font-style: normal;
+        line-height: normal;
+      }
+  
+      h2 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+  
+      p {
+        font-size: 15.043px;
+        font-weight: 300;
+      }
+    }
+  
+    .commande__form-price {
+      p {
+        color: #353535;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15.043px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+
+/// Footer
 .footer__title h2 {
   color: $footer-title-color;
   font-family: Shrikhand;
