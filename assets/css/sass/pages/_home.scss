@@ -35,10 +35,9 @@
                     width: 100%;
                     height: 100%;
                     flex-shrink: 0;
-                    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+                    // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
                     object-fit: cover;
                     border-radius: 1.25rem 1.25rem 0 0;
-                    
                 }
             }
 

@@ -506,6 +506,7 @@ footer .footer__link a i {
   align-items: center;
   width: 100%;
   max-width: 634px;
+  min-width: 280px;
   height: 69px;
   flex-shrink: 0;
   gap: 5px;
@@ -527,9 +528,14 @@ footer .footer__link a i {
   height: 100%;
   padding: 0;
   cursor: pointer;
+  transition: transform 1s;
+  gap: 5px;
 }
 .section__commande .commande__form-group label .commande__form-title {
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .section__commande .commande__form-group label .commande__form-title h2, .section__commande .commande__form-group label .commande__form-title p {
   margin: 0;
@@ -551,8 +557,25 @@ footer .footer__link a i {
 .section__commande .commande__form-group label .commande__form-price p::after {
   content: "€";
 }
-.section__commande .commande__form-group input[type=checkbox]:checked + label {
-  transition: all 1s ease;
+.section__commande .commande__form-group input[type=checkbox] + label {
+  overflow: hidden;
+}
+.section__commande .commande__form-group input[type=checkbox] + label::after {
+  content: "\f058";
+  font: var(--fa-font-solid);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #99E2D0;
+  width: 0;
+  max-width: 59px;
+  height: 100%; /* ou 69px */
+  flex-shrink: 0;
+  border-radius: 0 20px 20px 0;
+  transform: translate(50px);
+  transition: 0.3s;
 }
 .section__commande .commande__form-group input[type=checkbox]:checked + label::after {
   content: "\f058";
@@ -569,6 +592,7 @@ footer .footer__link a i {
   height: 100%; /* ou 69px */
   flex-shrink: 0;
   border-radius: 0 20px 20px 0;
+  transform: translate(0);
 }
 
 .section__reserve {
@@ -602,7 +626,6 @@ footer .footer__link a i {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   object-fit: cover;
   border-radius: 1.25rem 1.25rem 0 0;
 }
@@ -625,7 +648,12 @@ footer .footer__link a i {
   flex-shrink: 0;
   background-color: aqua;
   margin-top: -50px;
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-image.bg1 {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 .section__menu {

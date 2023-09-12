@@ -39,6 +39,7 @@
 
         width: 100%;
         max-width: 634px;
+        min-width: 280px;
         height: 69px;
         flex-shrink: 0;
 
@@ -63,11 +64,15 @@
             height: 100%;
             padding: 0;
             cursor: pointer;
+            transition: transform 1s;
 
-            // background-color: aqua;
+            gap: 5px;
 
             .commande__form-title {
                 width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
 
                 h2, p {
                     margin: 0;
@@ -99,9 +104,32 @@
             }
         }
 
-        input[type="checkbox"]:checked+label {
-            transition: all 1s ease;
+        input[type="checkbox"]+label {
+            overflow: hidden;
+            &::after {
+                content: '\f058';
+                font: var(--fa-font-solid);
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                background-color: #99E2D0;
+                width: 0;
+                max-width: 59px;
+                // min-width: 49px;
+                height: 100%; /* ou 69px */
 
+                flex-shrink: 0;
+                border-radius: 0 20px 20px 0;
+
+                // opacity: 0;
+                transform: translate(50px);
+                transition:.3s;
+            }
+        }
+
+        input[type="checkbox"]:checked+label {
             &::after {
                 content: '\f058';
                 font: var(--fa-font-solid);
@@ -118,6 +146,9 @@
 
                 flex-shrink: 0;
                 border-radius: 0 20px 20px 0;
+
+                // opacity: 1;
+                transform: translate(0);
             }
         }
     }

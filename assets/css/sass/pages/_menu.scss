@@ -7,9 +7,17 @@
     flex-shrink: 0;
     background-color: aqua;
     margin-top: -50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    &.bg1 {
+        background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");  
+        // background: lightgray 50%;
+    }
 }
+
+
 
 .section__menu {
     position: relative;
