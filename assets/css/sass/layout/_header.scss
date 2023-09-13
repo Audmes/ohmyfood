@@ -27,4 +27,15 @@ header {
         z-index: -1;
         // margin-top: 63px;
     }
+
+    .header__button {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 20px;
+        width: 30px;
+        height: 63px;
+        flex-shrink: 0;
+    }
 }

@@ -54,7 +54,7 @@ $h1--color: rgb(0, 0, 0) !default;
 
 /// Section menu color
 /// @type Color
-$section__bg--color: rgb(246, 246, 246) !default;
+$section__bg--color: #f6f6f6 !default;
 
 
 /// Section title color
@@ -67,6 +67,10 @@ $section__title--color: rgb(0, 0, 0) !default;
 /// Button 1 txt color
 /// @type Color
 $btn-text-color-1: rgb(255, 255, 255) !default;
+
+/// Button arrow color
+/// @type Color
+$btn-arrow-color: #353535 !default;
 
 /// Button preparation ico color
 /// @type Color

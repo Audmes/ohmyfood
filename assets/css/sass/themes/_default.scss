@@ -2,3 +2,19 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+@media screen and (min-width: 600px) {
+    section {
+        padding: 50px 0; // A changer ! pour la mise en page
+    }
+    // Section menu title
+    .section__menu {
+        padding-top: 51px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    // Preparation btn
+    .preparation__wrapper__btn {
+        flex-direction: row;
+    }
+}

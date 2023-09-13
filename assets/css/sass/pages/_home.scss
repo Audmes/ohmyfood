@@ -2,8 +2,10 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .section__reserve {
-    align-items: center;
-    gap: 25px;
+    text-align: center;
+    .reserve__title {
+        margin-bottom: 27px;
+    }
 }
 
 .section__restaurants {
