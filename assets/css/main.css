@@ -1,6 +1,46 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700");
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -695,6 +735,48 @@ footer .footer__link a i {
   flex-shrink: 0;
   border-radius: 0 20px 20px 0;
   transform: translate(0);
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.9);
+  z-index: 1;
+  animation: loader 1s linear 1s forwards;
+}
+.loader i {
+  position: absolute;
+  z-index: 2;
+  font-size: 4rem;
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.circle__border {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(147, 86, 220);
+  background: -moz-linear-gradient(0deg, rgba(147, 86, 220, 0.1) 33%, rgba(255, 121, 218, 0.8) 50%, rgb(147, 86, 220) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(147, 86, 220, 0.1) 33%, rgba(255, 121, 218, 0.8) 50%, rgb(147, 86, 220) 100%);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.1) 33%, rgba(255, 121, 218, 0.8) 50%, rgb(147, 86, 220) 100%);
+  animation: spin 0.8s linear 0s infinite;
+}
+.circle__border__core {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(238, 238, 238);
+  border-radius: 50%;
 }
 
 .section__reserve {

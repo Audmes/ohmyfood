@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
+// This file contains all styles related to button component.
 // -----------------------------------------------------------------------------
 .btn {
     /* Button */
@@ -157,7 +157,7 @@
         &.full__heart {
             opacity: 0;
             transition: all 1s ease;
-            
+
             &:hover {
                 transform: scale(1.2);
                 color: transparent;

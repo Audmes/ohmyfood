@@ -1,6 +1,41 @@
 // -----------------------------------------------------------------------------
 // This file contains all animations.
 // -----------------------------------------------------------------------------
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display:none;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    display:none;
+  }
+}
+
+@-webkit-keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(359deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(359deg); }
+}
 
 @-webkit-keyframes fadeInDown {
   0% {
