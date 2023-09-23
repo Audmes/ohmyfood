@@ -558,6 +558,7 @@ footer .footer__link a i {
 }
 .btn__favorite i {
   position: absolute;
+  color: rgb(0, 0, 0);
   font-size: 22px;
   transition: all 450ms ease;
   cursor: pointer;
