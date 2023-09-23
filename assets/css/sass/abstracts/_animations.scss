@@ -1,18 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all animations.
 // -----------------------------------------------------------------------------
-@-webkit-keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    display:none;
-  }
-}
+// @-webkit-keyframes loader {
+//   0% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     opacity: 0;
+//     display:none;
+//   }
+// }
 
 @keyframes loader {
   0% {
@@ -27,25 +27,25 @@
   }
 }
 
-@-webkit-keyframes spin {
-  from { transform: rotate(0); }
-  to { transform: rotate(359deg); }
-}
+// @-webkit-keyframes spin {
+//   from { transform: rotate(0); }
+//   to { transform: rotate(359deg); }
+// }
 
 @keyframes spin {
   from { transform: rotate(0); }
   to { transform: rotate(359deg); }
 }
 
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-25px);
-  } 100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
+// @-webkit-keyframes fadeInDown {
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateY(-25px);
+//   } 100% {
+//     opacity: 1;
+//     -webkit-transform: translateY(0);
+//   }
+// }
   
 @keyframes fadeInDown {
   0% {
