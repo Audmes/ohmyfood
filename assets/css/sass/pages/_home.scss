@@ -34,7 +34,7 @@
                 text-decoration: none;
             }
 
-            &___image {
+            &__image {
                 position: relative;
                 width: 100%;
                 height: 174px;
@@ -48,7 +48,25 @@
                     border-radius: 1.25rem 1.25rem 0 0;
                     // filter:grayscale(1);
                 }
+            }
 
+            &__new::before {
+                content:'Nouveau';
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                right: 15px;
+                top: 15px;
+                width: 80px;
+                height: 29px;
+                border-radius: 2px;
+                background: var(--Green, #99E2D0);
+                text-decoration: none;
+
+                /* Shadow/Badge */
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
             }
 
             &__content {

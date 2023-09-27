@@ -94,6 +94,15 @@ header {
       font-weight: 300;
       line-height: normal;
     }
+
+    &__new {
+      color: var(--Green-Font, #008766);
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
 }
 
 .section__menu {

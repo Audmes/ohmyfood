@@ -10,6 +10,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
     display: none;
     z-index: -1;
   }
@@ -207,6 +208,14 @@ header {
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
+  line-height: normal;
+}
+.card__new {
+  color: var(--Green-Font, #008766);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -766,18 +775,34 @@ footer .footer__link a i {
 .section__restaurants .restaurants__cards .card a {
   text-decoration: none;
 }
-.section__restaurants .restaurants__cards .card___image {
+.section__restaurants .restaurants__cards .card__image {
   position: relative;
   width: 100%;
   height: 174px;
 }
-.section__restaurants .restaurants__cards .card___image img {
+.section__restaurants .restaurants__cards .card__image img {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
   display: block;
   object-fit: cover;
   border-radius: 1.25rem 1.25rem 0 0;
+}
+.section__restaurants .restaurants__cards .card__new::before {
+  content: "Nouveau";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 15px;
+  top: 15px;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background: var(--Green, #99E2D0);
+  text-decoration: none;
+  /* Shadow/Badge */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .section__restaurants .restaurants__cards .card__content {
   display: flex;
