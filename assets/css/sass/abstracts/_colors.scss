@@ -8,3 +8,95 @@
 //     --color-primary-s: 90%;
 //     --color-primary-l: 56%;
 // }
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Roboto', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', monospace !default;
+
+/// Primary color
+/// @type Color
+$primary-color: rgb(147, 86, 220) !default;
+
+/// Secondary color
+/// @type Color
+$secondary-color: rgb(255, 121, 218) !default;
+
+/// Tertiary color
+/// @type Color
+$tertiary-color: rgb(153, 226, 208) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(255, 255, 255) !default;
+
+
+
+/// Gradient linear
+/// @type Color
+$gradient-color: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%) !default;
+
+
+
+/// text color
+/// @type Color
+$text-color: rgb(0, 0, 0) !default;
+$text-color-2: rgb(246, 246, 246) !default;
+
+/// h1 color
+/// @type Color
+$h1--color: rgb(0, 0, 0) !default;
+
+
+
+/// Section menu color
+/// @type Color
+$section__bg--color: #f6f6f6 !default;
+$section__title--color: rgb(0, 0, 0) !default;
+
+/// Button 1 txt color
+/// @type Color
+$btn-text-color-1: rgb(255, 255, 255) !default;
+
+/// Button heart color
+/// @type Color
+$btn-heart-color: rgb(0, 0, 0) !default;
+
+/// Button arrow color
+/// @type Color
+$btn-arrow-color: #353535 !default;
+
+/// Button preparation ico color
+/// @type Color
+$btn-ico-color-1: rgb(126, 126, 126) !default;
+$btn-ico-color-2: #9356dc !default;
+
+/// Button Gradient color
+$button-gradient: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%) !default;
+
+
+/// Footer color
+/// @type Color
+$footer-title-color:rgb(255, 255, 255) !default;
+$footer-link-color:rgb(255, 255, 255) !default;
+
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(234, 234, 234) !default;
+$light-grey-2: rgb(246, 246, 246) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(53, 53, 53) !default;
+
+/// White
+/// @type Color
+$white: rgb(255, 255, 255) !default;

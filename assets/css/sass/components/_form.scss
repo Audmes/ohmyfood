@@ -39,7 +39,7 @@
                 bottom: 0;
                 width: 40px;
                 height: 3px;
-                background: #99E2D0;
+                background: $tertiary-color;
             }
         }
 
@@ -89,7 +89,7 @@
             height: 100%;
             padding: 0;
             cursor: pointer;
-            transition: transform 1s;
+            // transition: transform 1s;
 
             gap: 5px;
 
@@ -131,6 +131,7 @@
 
         input[type="checkbox"]+label {
             overflow: hidden;
+            
             &::after {
                 content: '\f058';
                 font: var(--fa-font-solid);
@@ -139,7 +140,7 @@
                 justify-content: center;
                 align-items: center;
                 color: $white;
-                background-color: #99E2D0;
+                background-color: $tertiary-color;
                 width: 0;
                 max-width: 59px;
                 // min-width: 49px;
@@ -150,7 +151,7 @@
 
                 // opacity: 0;
                 transform: translate(50px);
-                transition:.3s;
+                transition: 450ms;
             }
         }
 
@@ -163,7 +164,7 @@
                 justify-content: center;
                 align-items: center;
                 color: $white;
-                background-color: #99E2D0;
+                background-color: $tertiary-color;
                 width: 100%;
                 max-width: 59px;
                 min-width: 49px;

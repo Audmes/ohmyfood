@@ -34,7 +34,6 @@
     border-radius: 25px;
     background: $button-gradient;
     cursor: pointer;
-    // background: var(--button-gradient, );
     transition: all 450ms ease;
     /* Shadow/Button */
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -68,6 +67,7 @@
         background: $light-grey-2;
         padding: 0;
         margin-left: 12px;
+        transition: all 450ms ease;
         /* Shadow/Instructions */
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
@@ -82,10 +82,10 @@
             left: -12px;
             height: 24px;
             width: 24px;
-            background-color: #9356DC;
+            background-color: $primary-color;
             border-radius: 50%;
             
-            color: var(--background, #F6F6F6);
+            color: $text-color-2;
             font-family: Roboto;
             font-size: 14.182px;
             font-style: normal;
@@ -116,10 +116,10 @@
             height: 24px;
             width: 24px;
             flex-shrink: 0;
-            background-color: #9356DC;
+            background-color: $primary-color;
             border-radius: 50%;
             
-            color: var(--background, #F6F6F6);
+            color: $text-color-2;
             font-family: Roboto;
             font-size: 14.182px;
             font-style: normal;
@@ -152,20 +152,18 @@
         position: absolute;
         color: $btn-heart-color;
         font-size: 22px;
-        transition: all 450ms ease;
         cursor: pointer;
 
         &.full__heart {
             opacity: 0;
-            transition: all 1s ease;
+            // transition: all 1s ease;
 
             &:hover {
-                transform: scale(1.2);
                 color: transparent;
                 background-image: $gradient-color;
                 -webkit-background-clip: text;
                 background-clip: text;
-                opacity: 1;
+                animation: heart 1s forwards;
             }
         }
     }

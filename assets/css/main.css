@@ -20,7 +20,7 @@
     transform: rotate(0);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes fadeInDown {
@@ -31,6 +31,16 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
   }
 }
 /**
@@ -48,7 +58,10 @@ html {
 */
 html {
   line-height: 1.15; /* 1 */
+  -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /**
@@ -104,7 +117,7 @@ img {
  * Basic styles for links
  */
 a {
-  color: rgb(229, 0, 80);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
@@ -460,6 +473,7 @@ footer .footer__link a i {
   background: rgb(246, 246, 246);
   padding: 0;
   margin-left: 12px;
+  transition: all 450ms ease;
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
@@ -473,9 +487,9 @@ footer .footer__link a i {
   left: -12px;
   height: 24px;
   width: 24px;
-  background-color: #9356DC;
+  background-color: rgb(147, 86, 220);
   border-radius: 50%;
-  color: var(--background, #F6F6F6);
+  color: rgb(246, 246, 246);
   font-family: Roboto;
   font-size: 14.182px;
   font-style: normal;
@@ -486,7 +500,7 @@ footer .footer__link a i {
   color: rgb(126, 126, 126);
 }
 .preparation__wrapper__btn .preparation__btn i.color2 {
-  color: rgb(147, 86, 220);
+  color: #9356dc;
 }
 .preparation__wrapper__btn .preparation__btn .btn__txt {
   width: 211px;
@@ -500,9 +514,9 @@ footer .footer__link a i {
   height: 24px;
   width: 24px;
   flex-shrink: 0;
-  background-color: #9356DC;
+  background-color: rgb(147, 86, 220);
   border-radius: 50%;
-  color: var(--background, #F6F6F6);
+  color: rgb(246, 246, 246);
   font-family: Roboto;
   font-size: 14.182px;
   font-style: normal;
@@ -529,20 +543,17 @@ footer .footer__link a i {
   position: absolute;
   color: rgb(0, 0, 0);
   font-size: 22px;
-  transition: all 450ms ease;
   cursor: pointer;
 }
 .btn__favorite i.full__heart {
   opacity: 0;
-  transition: all 1s ease;
 }
 .btn__favorite i.full__heart:hover {
-  transform: scale(1.2);
   color: transparent;
   background-image: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  opacity: 1;
+  animation: heart 1s forwards;
 }
 
 .section__commande {
@@ -576,7 +587,7 @@ footer .footer__link a i {
   bottom: 0;
   width: 40px;
   height: 3px;
-  background: #99E2D0;
+  background: rgb(153, 226, 208);
 }
 .section__commande form button {
   margin: 0 auto;
@@ -640,7 +651,6 @@ footer .footer__link a i {
   height: 100%;
   padding: 0;
   cursor: pointer;
-  transition: transform 1s;
   gap: 5px;
 }
 .section__commande .commande__form-group label .commande__form-title {
@@ -680,14 +690,14 @@ footer .footer__link a i {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color: #99E2D0;
+  background-color: rgb(153, 226, 208);
   width: 0;
   max-width: 59px;
   height: 100%; /* ou 69px */
   flex-shrink: 0;
   border-radius: 0 20px 20px 0;
   transform: translate(50px);
-  transition: 0.3s;
+  transition: 450ms;
 }
 .section__commande .commande__form-group input[type=checkbox]:checked + label::after {
   content: "\f058";
@@ -697,7 +707,7 @@ footer .footer__link a i {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color: #99E2D0;
+  background-color: rgb(153, 226, 208);
   width: 100%;
   max-width: 59px;
   min-width: 49px;
