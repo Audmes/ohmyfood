@@ -775,6 +775,7 @@ footer .footer__link a i {
 .section__restaurants .restaurants__cards .card {
   min-width: 40%;
   flex-grow: 1;
+  width: 100%;
   height: 251px;
   border-radius: 1.25rem; /* 20px */
   background-color: white;
