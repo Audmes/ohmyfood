@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/**
+ * Convertir en rem et em
+ */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700");
 @keyframes loader {
@@ -251,7 +254,7 @@ header {
   line-height: normal;
   text-transform: uppercase;
 }
-.section__commande .commande__form-group .commande__form-title h2, .section__commande .commande__form-group .commande__form-title p {
+.section__commande .commande__form-group .commande__form-title__title, .section__commande .commande__form-group .commande__form-title__desc {
   text-align: left;
   overflow: hidden;
   color: #000;
@@ -261,15 +264,15 @@ header {
   font-style: normal;
   line-height: normal;
 }
-.section__commande .commande__form-group .commande__form-title h2 {
+.section__commande .commande__form-group .commande__form-title__title {
   font-size: 18px;
   font-weight: 500;
 }
-.section__commande .commande__form-group .commande__form-title p {
+.section__commande .commande__form-group .commande__form-title__desc {
   font-size: 15.043px;
   font-weight: 300;
 }
-.section__commande .commande__form-group .commande__form-price p {
+.section__commande .commande__form-group .commande__form-price {
   color: #353535;
   text-align: center;
   font-family: Roboto;
@@ -654,21 +657,24 @@ footer .footer__link a i {
   gap: 5px;
 }
 .section__commande .commande__form-group label .commande__form-title {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.section__commande .commande__form-group label .commande__form-title h2, .section__commande .commande__form-group label .commande__form-title p {
+.section__commande .commande__form-group label .commande__form-title__title, .section__commande .commande__form-group label .commande__form-title__desc {
   margin: 0;
   padding-left: 15px;
   flex-shrink: 0;
   align-self: stretch;
 }
-.section__commande .commande__form-group label .commande__form-title h2 {
+.section__commande .commande__form-group label .commande__form-title__title {
   height: 21px;
+  padding-left: 15px;
 }
-.section__commande .commande__form-group label .commande__form-title p {
+.section__commande .commande__form-group label .commande__form-title__desc {
   height: 19px;
 }
 .section__commande .commande__form-group label .commande__form-price {
@@ -676,7 +682,7 @@ footer .footer__link a i {
   align-self: flex-end;
   padding: 0 15px 15px 0;
 }
-.section__commande .commande__form-group label .commande__form-price p::after {
+.section__commande .commande__form-group label .commande__form-price::after {
   content: "€";
 }
 .section__commande .commande__form-group input[type=checkbox] + label {
