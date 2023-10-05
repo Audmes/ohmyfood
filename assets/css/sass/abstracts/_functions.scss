@@ -29,3 +29,28 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
+
+/**
+ * Convertir en rem et em
+ */
+$base-font-size: 16px!default;
+
+// Il est nécéssaire de retirer l'unité px, sinon le calcul ne peut pas se faire.
+// On ne peut pas divisé des rem ou em par des pixels.
+
+// Retirer l'unité 'px'
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+}
+
+// Convertir en rem
+@function rem($size, $base-font-size) {
+  @return 1rem * $size / strip-unit($base);
+}
+
+// Convertir en em
+@function em($size, $base-font-size) {
+  @return 1em * $size / strip-unit($base);
+}

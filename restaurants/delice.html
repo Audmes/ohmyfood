@@ -24,9 +24,10 @@
         </header>
 
         <main>
-            <section title="hero">
+            <div class="section__hero">
                 <div class="hero-image bg1"></div>
-            </section>
+            </div>
+
             <section class="section__menu container">
                 <div class="menu__title">
                     <h1>Le délice des sens</h1>
@@ -35,124 +36,124 @@
                         <i class="fa-solid fa-heart full__heart"></i>
                     </button>
                 </div>
-            </section>
+            
+                <div title="menu" class="section__commande container">
+                    <form action="#" method="POST"> 
 
-            <section title="menu" class="section__commande container">
-                <form action="#" method="POST"> 
+                        <fieldset>
+                            <legend>Entrées</legend>
 
-                    <fieldset>
-                        <legend>Entrées</legend>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="entrees" id="entree1" class="commande__form-input" value="25">
+                                <label for="entree1">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Tartare de thon</span>
+                                        <span class="commande__form-title__desc">Assaisonné au yuzu</span>
+                                    </span>
+                                    <span class="commande__form-price">25</span>
+                                </label>
+                            </div>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="entrees" id="entree1" class="commande__form-input" value="25">
-                            <label for="entree1">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Tartare de thon</span>
-                                    <span class="commande__form-title__desc">Assaisonné au yuzu</span>
-                                </span>
-                                <span class="commande__form-price">25</span>
-                            </label>
-                        </div>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="entrees" id="entree2" class="commande__form-input" value="35">
+                                <label for="entree2">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Bouchée de homard croustillant</span>
+                                        <span class="commande__form-title__desc">Et sa farandole de petits légumes</span>
+                                    </span>
+                                    <span class="commande__form-price">35</span>
+                                </label>
+                            </div>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="entrees" id="entree2" class="commande__form-input" value="35">
-                            <label for="entree2">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Bouchée de homard croustillant</span>
-                                    <span class="commande__form-title__desc">Et sa farandole de petits légumes</span>
-                                </span>
-                                <span class="commande__form-price">35</span>
-                            </label>
-                        </div>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="entrees" id="entree3" class="commande__form-input" value="20">
+                                <label for="entree3">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Velouté de cèpes</span>
+                                        <span class="commande__form-title__desc">Aux truffes</span>
+                                    </span>
+                                    <span class="commande__form-price">20</span>
+                                </label>
+                            </div>
+                        </fieldset>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="entrees" id="entree3" class="commande__form-input" value="20">
-                            <label for="entree3">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Velouté de cèpes</span>
-                                    <span class="commande__form-title__desc">Aux truffes</span>
-                                </span>
-                                <span class="commande__form-price">20</span>
-                            </label>
-                        </div>
-                    </fieldset>
+                        <fieldset>
+                            <legend>Plats</legend>
 
-                    <fieldset>
-                        <legend>Plats</legend>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="plats" id="plat1" class="commande__form-input" value="40">
+                                <label for="plat1">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Poulet rôti aux herbes de Provence</span>
+                                        <span class="commande__form-title__desc">Et sa crème de truffe</span>
+                                    </span>
+                                    <span class="commande__form-price">40</span>
+                                </label>
+                            </div>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="plats" id="plat1" class="commande__form-input" value="40">
-                            <label for="plat1">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Poulet rôti aux herbes de Provence</span>
-                                    <span class="commande__form-title__desc">Et sa crème de truffe</span>
-                                </span>
-                                <span class="commande__form-price">40</span>
-                            </label>
-                        </div>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="plats" id="plat2" class="commande__form-input" value="35">
+                                <label for="plat2">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Langouste rôtie</span>
+                                        <span class="commande__form-title__desc">Et ses légumes de saison</span>
+                                    </span>
+                                    <span class="commande__form-price">35</span>
+                                </label>
+                            </div>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="plats" id="plat2" class="commande__form-input" value="35">
-                            <label for="plat2">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Langouste rôtie</span>
-                                    <span class="commande__form-title__desc">Et ses légumes de saison</span>
-                                </span>
-                                <span class="commande__form-price">35</span>
-                            </label>
-                        </div>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="plats" id="plat3" class="commande__form-input" value="44">
+                                <label for="plat3">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Côte de bœuf Angus</span>
+                                        <span class="commande__form-title__desc">Et sa purée de panais</span>
+                                    </span>
+                                    <span class="commande__form-price">44</span>
+                                </label>
+                            </div>
+                        </fieldset>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="plats" id="plat3" class="commande__form-input" value="44">
-                            <label for="plat3">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Côte de bœuf Angus</span>
-                                    <span class="commande__form-title__desc">Et sa purée de panais</span>
-                                </span>
-                                <span class="commande__form-price">44</span>
-                            </label>
-                        </div>
-                    </fieldset>
+                        <fieldset>
+                            <legend>Desserts</legend>
 
-                    <fieldset>
-                        <legend>Desserts</legend>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="desserts" id="dessert1" class="commande__form-input" value="18">
+                                <label for="dessert1">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Farandole de desserts</span>
+                                        <span class="commande__form-title__desc">Du chef</span>
+                                    </span>
+                                    <span class="commande__form-price">18</span>
+                                </label>
+                            </div>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="desserts" id="dessert1" class="commande__form-input" value="18">
-                            <label for="dessert1">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Farandole de desserts</span>
-                                    <span class="commande__form-title__desc">Du chef</span>
-                                </span>
-                                <span class="commande__form-price">18</span>
-                            </label>
-                        </div>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="desserts" id="dessert2" class="commande__form-input" value="22">
+                                <label for="dessert2">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Crème brulée</span>
+                                        <span class="commande__form-title__desc">Revisitée</span>
+                                    </span>
+                                    <span class="commande__form-price">22</span>
+                                </label>
+                            </div>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="desserts" id="dessert2" class="commande__form-input" value="22">
-                            <label for="dessert2">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Crème brulée</span>
-                                    <span class="commande__form-title__desc">Revisitée</span>
-                                </span>
-                                <span class="commande__form-price">22</span>
-                            </label>
-                        </div>
+                            <div class="commande__form-group">
+                                <input type="checkbox" name="desserts" id="dessert3" class="commande__form-input" value="23">
+                                <label for="dessert3">
+                                    <span class="commande__form-title">
+                                        <span class="commande__form-title__title">Tiramisu</span>
+                                        <span class="commande__form-title__desc">À la noisette</span>
+                                    </span>
+                                    <span class="commande__form-price">23</span>
+                                </label>
+                            </div>
+                        </fieldset>
 
-                        <div class="commande__form-group">
-                            <input type="checkbox" name="desserts" id="dessert3" class="commande__form-input" value="23">
-                            <label for="dessert3">
-                                <span class="commande__form-title">
-                                    <span class="commande__form-title__title">Tiramisu</span>
-                                    <span class="commande__form-title__desc">À la noisette</span>
-                                </span>
-                                <span class="commande__form-price">23</span>
-                            </label>
-                        </div>
-                    </fieldset>
-
-                    <button class="btn reserve__btn" type="submit">Commander</button>
-                </form>
+                        <button class="btn reserve__btn" type="submit">Commander</button>
+                    </form>
+                </div>
             </section>
         </main>
 
