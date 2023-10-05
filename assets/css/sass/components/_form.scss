@@ -94,23 +94,26 @@
             gap: 5px;
 
             .commande__form-title {
+                display: flex;
+                flex-direction: column;
                 width: 100%;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
 
-                h2, p {
+                &__title, &__desc {
                     margin: 0;
                     padding-left: 15px;
                     flex-shrink: 0;
                     align-self: stretch;
                 }
 
-                h2 {
+                &__title {
                     height: 21px; 
+                    padding-left: 15px;
                 }
 
-                p {
+                &__desc {
                     height: 19px;
                 }
             }
@@ -120,11 +123,8 @@
                 align-self: flex-end;
                 padding: 0 15px 15px 0;
 
-                p {
-                    &::after {
-                        content: '€';
-                    }
-
+                &::after {
+                    content: '€';
                 } 
             }
         }

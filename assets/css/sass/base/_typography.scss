@@ -136,7 +136,7 @@ header {
 
   .commande__form-group {
     .commande__form-title {
-      h2, p {
+      &__title, &__desc {
         text-align: left;
   
         overflow: hidden;
@@ -148,19 +148,18 @@ header {
         line-height: normal;
       }
   
-      h2 {
+      &__title {
         font-size: 18px;
         font-weight: 500;
       }
   
-      p {
+      &__desc {
         font-size: 15.043px;
         font-weight: 300;
       }
     }
   
     .commande__form-price {
-      p {
         color: #353535;
         text-align: center;
         font-family: Roboto;
@@ -168,7 +167,6 @@ header {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-      }
     }
   }
 }
